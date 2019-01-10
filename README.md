@@ -45,3 +45,10 @@ The SX1276 is found on for example the RFM95W module commonly used. This chip do
 |     :---:      |     :---:      |
 | ![](img/rn2483.png) | ![](img/RFM95W.png) |
 | Has an On-board LoRaWAN protocol stack | LoRa Radio transceiver, requires LoRaWAN software stack |
+
+## Changelog
+
+* 0.1.0
+  * Allow callback registration
+  * Basic send
+  * External Event Queue
