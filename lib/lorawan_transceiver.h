@@ -30,6 +30,7 @@ namespace IoT {
 
       public:
         int connect(void);
+        int disconnect(void);
 
       public:
         SendStatus send(uint8_t * buffer, uint16_t length, uint8_t port);

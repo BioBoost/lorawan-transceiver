@@ -48,6 +48,17 @@ namespace IoT {
       return 0;
     }
 
+    int LoRaWANTransceiver::disconnect(void) {
+      lorawan_status_t retcode = lorawan.disconnect();
+      if (!(retcode == LORAWAN_STATUS_OK)) {
+        log("Disconnection error, code = %d\n", retcode);
+        return -1;
+      }
+      log("Disconnecting from the network ...\n");
+
+      return 0;
+    }
+
     LoRaWANTransceiver::SendStatus LoRaWANTransceiver::send(uint8_t * buffer, uint16_t length, uint8_t port=1) {
       if (!isConnected) {
         log("Not connected to LoRaWAN - cannot send\n");
