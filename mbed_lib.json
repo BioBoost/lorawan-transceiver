@@ -25,12 +25,53 @@
     "lora-pwr-amp-ctl":    "NC",
     "lora-tcxo":           "NC",
 
-
     "lora_confirmed_msg_retry": {
       "help": "Number of times to retry confirmed messages",
       "macro_name": "CONFIRMED_MSG_RETRY_COUNTER",
       "required": true,
       "value": "3"
+    }
+  },
+  "target_overrides": {
+    "K64F": {
+      "lora-spi-mosi":       "D11",
+      "lora-spi-miso":       "D12",
+      "lora-spi-sclk":       "D13",
+      "lora-cs":             "D0",
+      "lora-reset":          "D1",
+      "lora-dio0":           "D2",
+      "lora-dio1":           "D3",
+      "lora-dio2":           "NC",
+      "lora-dio3":           "NC",
+      "lora-dio4":           "NC",
+      "lora-dio5":           "NC",
+      "lora-rf-switch-ctl1": "NC",
+      "lora-rf-switch-ctl2": "NC",
+      "lora-txctl":          "NC",
+      "lora-rxctl":          "NC",
+      "lora-ant-switch":     "NC",
+      "lora-pwr-amp-ctl":    "NC",
+      "lora-tcxo":           "NC"
+    },
+    "NUCLEO_L476RG": {
+      "lora-spi-mosi":       "D11",
+      "lora-spi-miso":       "D12",
+      "lora-spi-sclk":       "D13",
+      "lora-cs":             "D0",
+      "lora-reset":          "D1",
+      "lora-dio0":           "D2",
+      "lora-dio1":           "D3",
+      "lora-dio2":           "NC",
+      "lora-dio3":           "NC",
+      "lora-dio4":           "NC",
+      "lora-dio5":           "NC",
+      "lora-rf-switch-ctl1": "NC",
+      "lora-rf-switch-ctl2": "NC",
+      "lora-txctl":          "NC",
+      "lora-rxctl":          "NC",
+      "lora-ant-switch":     "NC",
+      "lora-pwr-amp-ctl":    "NC",
+      "lora-tcxo":           "NC"
     }
   }
 }
